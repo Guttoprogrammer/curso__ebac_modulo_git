@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(197, 228, 179);
+    display: grid; 
+    justify-content: center; 
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: rgb(59, 59, 59);
+}
+.container{
+    padding: 20px;
+    background-color: rgba(15, 153, 245, 0.3);
+    border-radius: 20px;
+}
+
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#form{
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    flex-direction: column;
+}
+
+input{
+    height: 25px;
+    width: 100px;
+    padding: 15px;
+    margin: 0px;
+    border: none;
+    border-radius: 5px;
+}
+
+button{
+    font-size: medium;
+    border: none;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(197, 228, 179);
+    margin-top: 20px;
+    height: 30px;
+    width: 100px;
+}
+button:hover{
+    background-color: rgba(15, 153, 245, 0.3);
+    color: azure;
+}
+
+img{
+    margin-left: 500px;
+    margin-top: -200px;
+    max-height: 100px;
+    max-width: 200px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; 
+    margin: 0;
+}
+p{
+    font-family: monospace;
+}
+#mensagem{
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        display: none;
+        justify-content: center;
+        border-radius: 50px;
+}
+
+#mensagem.sucesso{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: grid;
+    justify-content: center;
+    background-color: rgb(80, 202, 80);
+    border-radius: 50px;
+    padding: 10px 15px;
+    margin-top: 10px;
+}
+#mensagem.erro{
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        display: grid;
+        justify-content: center;
+        background-color: rgb(224, 17, 17);
+        border-radius: 50px;
+        padding: 10px 15px;
+        margin-top: 10px;
+    }
+
+#mensagem.alerta{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: grid;
+    justify-content: center;
+    background-color: rgb(255, 102, 0);
+    border-radius: 50px;
+    padding: 10px 15px;
+    margin-top: 10px;
+}
