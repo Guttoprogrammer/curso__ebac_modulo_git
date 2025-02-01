@@ -1,0 +1,547 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Josefin Sans", serif;
+}
+@font-face {
+    font-family: 'HeartBreakingBad';
+    src: url('./fonts/heart-breaking-bad.regular.otf') format('truetype');
+}
+
+@media screen and (min-width: 1024px){
+    body{
+    background-image: url(./Images/breaking-bad-walter-and-jessie-grunge.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat ;
+    min-height: 100vh;
+    margin: 0;
+    min-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+}
+
+
+
+header{
+    margin-bottom: 1em;
+}
+
+h1{
+    font-family: 'HeartBreakingBad';
+    font-weight: 100;
+    font-size: 3em;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: linear-gradient(to bottom, rgba(4, 31, 30, 0.9), rgba(10, 76, 47, 0.8), rgba(17, 159, 91, 0.7));
+    padding: 1em;
+    
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    min-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container ul{
+    display: flex;
+    list-style: none;
+}
+
+.container ul a{
+    margin: 0.5em;
+    color: white;
+    text-decoration: none;
+}
+
+.container ul a:hover{
+    border-bottom:1px solid rgb(255, 255, 255, 0.2) ;
+}
+
+#about {
+    max-width: 1024px;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, rgba(4, 31, 30, 0.9), rgba(10, 76, 47, 0.8), rgba(17, 159, 91, 0.7));
+    padding: 3em;
+    margin-bottom: 1em;
+}
+
+h2{
+    border-bottom:1px solid ;
+    margin-bottom: 1em;
+    max-width: 250px;
+}
+
+#products h2{
+    color: rgb(255, 255, 255);
+    width: 100%;
+    max-width: 1024px;
+    justify-content: start;
+    margin-bottom:1em ;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+
+#about img{
+    max-width:400px;
+    width: 100%;
+    border-radius: 5px;
+
+}
+
+.text_main{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding-left: 0.5em;
+}
+
+.products{
+    display: grid;
+    grid-template-columns:repeat(4, 25%);
+    max-width: 1024px;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(4, 31, 30, 0.9), rgba(10, 76, 47, 0.8), rgba(17, 159, 91, 0.7));
+    border-radius: 5px;
+    margin-bottom: 2em;
+}
+
+.products a{
+    max-width: 300px;
+    text-decoration: none;
+    color: white;
+}
+
+.products a > h3{
+    margin-bottom: 10px;
+    min-height: 40px;
+} 
+
+.products p {
+    max-width:300px;
+    min-height: 60px;
+}
+
+.product img{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    border-radius: 5px;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product{
+    margin: 0.5em;
+    padding: 1em;
+    height: 100%;
+}
+
+.button_add{
+    max-width: 300px;
+    width: 100%;
+    height:2em;
+    border-radius: 5px;
+    border-style:none;
+    cursor: pointer;
+}
+
+.button_add:hover{
+    transition: background-color 0.5s;
+    background-color: yellowgreen;
+}
+
+footer p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    max-width:1024px;
+    width: 100%;
+
+}
+
+footer img{
+    max-width: 2.5em;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: linear-gradient(to bottom, rgba(4, 31, 30, 0.9), rgba(10, 76, 47, 0.8), rgba(17, 159, 91, 0.7));
+    padding: 0.5em;
+}
+
+    
+}
+
+@media screen and (max-width: 1023px){
+        body{
+            background-image: url(./Images/brba-jessie-walt-phone.webp);
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat ;
+            min-height: 100vh;
+            margin: 0;
+            max-width: 1023px;
+            width: 100%;
+            margin: 0 auto;
+            font-size: 1em;
+            color: rgb(255, 255, 255);
+        }
+
+        header{
+            margin-bottom: 1em;
+        }
+        
+        
+        header .container{
+            display: flex;
+            margin: 0 auto;
+            background: linear-gradient(to bottom, rgba(4, 31, 30, 0.9), rgba(10, 76, 47, 0.8), rgba(17, 159, 91, 0.7));
+            align-items: center;
+            justify-content: space-between;
+            max-width:1023px;
+            width: 100%;
+        }
+        
+        h1{
+            font-family: 'HeartBreakingBad';
+            font-weight: 100;
+            font-size: 3em;
+        }
+        .container{
+            display: block;
+            align-items: center;
+            justify-content: space-evenly;
+            max-width: 1023px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        
+        .container ul{
+            display: flex;
+            list-style: none;
+        }
+        
+        .container ul a{
+            margin: 0.5em;
+            color: white;
+            text-decoration: none;
+        }
+        
+        .container ul a:hover{
+            border-bottom:1px solid rgb(255, 255, 255, 0.2) ;
+        }
+        
+        #about {
+            display: block;
+            margin: 1em 2.5em;
+            max-width: 1023px;
+            align-items: center;
+            justify-content: center;
+            width: 90%;
+            background: linear-gradient(to bottom, rgba(4, 31, 30, 0.9), rgba(10, 76, 47, 0.8), rgba(17, 159, 91, 0.7));
+            border-radius: 5px;
+            margin-bottom: 2em;
+        }
+        
+        h2{
+            border-bottom:1px solid ;
+            margin-bottom: 1em;
+            max-width: 1023px;
+        }
+        
+        #products h2{
+            color: rgb(255, 255, 255);
+            width: 90%;
+            max-width: 1023px;
+            justify-content: start;
+            margin-bottom:1em ;
+            border-bottom: 1px solid rgb(255, 255, 255);
+        }
+        
+        #about img{
+            max-width: 1023px;
+            width: 95%;
+            border-radius: 5px;
+            margin: 1em;
+        }
+        
+        .text_main{
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            padding: 1em;
+        }
+        
+        .products{
+            display: grid;
+            grid-template-columns:repeat(2, 50%);
+            max-width: 1023px;
+            align-items: center;
+            justify-content: center;
+            width: 90%;
+            background: linear-gradient(to bottom, rgba(4, 31, 30, 0.9), rgba(10, 76, 47, 0.8), rgba(17, 159, 91, 0.7));
+            border-radius: 5px;
+            margin-bottom: 2em;
+        }
+        
+        .products a{
+            max-width: 300px;
+            text-decoration: none;
+            color: white;
+        }
+        
+        .products a > h3{
+            margin-bottom: 10px;
+            min-height: 40px;
+        } 
+        
+        .products p {
+            max-width:300px;
+            min-height: 60px;
+        }
+        
+        .product img{
+            width: 90%;
+            aspect-ratio: 1 / 1;
+            object-fit: contain;
+            border-radius: 5px;
+            background-color: white;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .product{
+            margin: 0.5em;
+            padding: 1em;
+            height: 100%;
+        }
+        
+        .button_add{
+            max-width:1023px;
+            width: 100%;
+            max-height:2em;
+            height: 80%;
+            border-radius: 5px;
+            border-style:none;
+            cursor: pointer;
+        }
+        
+        .button_add:hover{
+            transition: background-color 0.5s;
+            background-color: yellowgreen;
+        }
+        
+        footer p{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1em;
+            max-width:1024px;
+            width: 100%;
+        
+        }
+        
+        footer img{
+            max-width: 2.5em;
+        }
+        
+        footer{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            background: linear-gradient(to bottom, rgba(4, 31, 30, 0.9), rgba(10, 76, 47, 0.8), rgba(17, 159, 91, 0.7));
+            padding: 0.5em;
+        }
+        
+        
+}
+
+
+@media screen and (max-width: 640px){
+    body{
+        background-image: url(./Images/brba-jessie-walt-phone.webp);
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat ;
+        min-height: 100vh;
+        margin: 0;
+        max-width: 640px;
+        width: 100%;
+        margin: 0 auto;
+        font-size: 1em;
+        color: rgb(255, 255, 255);
+    }
+
+    header{
+        margin-bottom: 1em;
+        width: 100%;
+    }
+    
+    header .container{
+        display: block;
+        margin: 0 auto;
+        background: linear-gradient(to bottom, rgba(4, 31, 30, 0.9), rgba(10, 76, 47, 0.8), rgba(17, 159, 91, 0.7));
+        align-items: center;
+        justify-content: space-between;
+        max-width:640px;
+    }
+
+    .container{
+        display: flex;
+        align-items: center;
+        max-width: 640px;
+        width: 100%;
+    }
+    
+    .container ul{
+        display: flex;
+        list-style: none;
+    }
+    
+    .container ul a{
+        margin: 0.5em;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .container ul a:hover{
+        border-bottom:1px solid rgb(255, 255, 255, 0.2) ;
+    }
+    
+    #about {
+        display: block;
+        max-width: 640px;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        border-radius: 5px;
+        margin: 1em 1.3em;
+    }
+    
+
+    #products h2{
+        color: rgb(255, 255, 255);
+        width: 100%;
+        max-width: 640px;
+        justify-content: start;
+        margin-bottom:1em ;
+        border-bottom: 1px solid rgb(255, 255, 255);
+    }
+    
+    #about img{
+        max-width: 640px;
+        width: 90%;
+        border-radius: 5px;
+    }
+    
+    .text_main{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        padding: 1em;
+    }
+    
+    .products{
+        display: grid;
+        grid-template-columns:repeat(1, 100%);
+        max-width: 640px;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        border-radius: 5px;
+        background: linear-gradient(to bottom, rgba(4, 31, 30, 0.9), rgba(10, 76, 47, 0.8), rgba(17, 159, 91, 0.7));
+    }
+    
+    .products a{
+        max-width: 300px;
+        text-decoration: none;
+        color: white;
+    }
+    
+    .products a > h3{
+        margin-bottom: 10px;
+        min-height: 40px;
+    } 
+    
+    .products p {
+        max-width:300px;
+        min-height: 60px;
+    }
+    
+    .product img{
+        max-width: 640px;
+        width: 100%;
+        
+        aspect-ratio: 1 / 1;
+        border-radius: 5px;
+        background-color: white;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .product{
+        display: block;
+        justify-content: space-between;
+    }
+    
+    .button_add{
+        max-width: 640px;
+        width: 100%;
+        max-height:3em;
+        height: 100%;
+        border-radius: 5px;
+        border-style:none;
+        cursor: pointer;
+    }
+    
+    .button_add:hover{
+        transition: background-color 0.5s;
+        background-color: yellowgreen;
+    }
+    
+    footer p{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1em;
+        max-width:641px;
+        width: 100%;
+    
+    }
+    
+    footer img{
+        max-width: 2.5em;
+    }
+    
+    footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background: linear-gradient(to bottom, rgba(4, 31, 30, 0.9), rgba(10, 76, 47, 0.8), rgba(17, 159, 91, 0.7));
+        padding: 0.5em;
+    }
+}
